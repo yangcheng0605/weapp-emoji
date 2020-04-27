@@ -1,0 +1,23 @@
+<view class='show'>{{content}}</view>
+<!--详情页-->
+<view class="container">
+  <!--评论盒子-->
+  <view class="comment-fixed">
+    <view class="cf-box">
+      <view class="emoji iconfont icon-emoji" catchtap="emojiShowHide"></view>
+      <textarea class="cf-content" bindfocus="textAreaFocus" maxlength="200" bindblur="textAreaBlur" auto-height value="{{content}}" placeholder="评论" bindinput='textAreaInput' />
+      <text class="cf-send touch-active" bindtap="send">发送</text>
+    </view>
+
+    <!--emoji表情盒子-->
+    <view class="emoji-box {{isShow ? 'emoji-move-in' : 'emoji-move-out'}} {{isLoad ? 'no-emoji-move' : ''}}">
+      <scroll-view scroll-y="true" bindscroll="emojiScroll" style="height:200px">
+        <block wx:for="{{emojis}}" wx:for-item="e" wx:key="">
+          <view class="emoji-cell">
+            <image class="touch-active" catchtap="emojiChoose" src="http://soupu.oss-cn-shanghai.aliyuncs.com/emoji/{{e.emoji}}.png" data-emoji="{{e.char}}" data-oxf="{{e.emoji}}"></image>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

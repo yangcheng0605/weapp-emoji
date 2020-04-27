@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/demo/demo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "emoji",
+    "borderStyle": "white"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

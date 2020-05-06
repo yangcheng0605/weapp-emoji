@@ -8,6 +8,5 @@
     "navigationBarTitleText": "emoji",
     "borderStyle": "white"
   },
-  "debug": true,
   "sitemapLocation": "sitemap.json"
 }

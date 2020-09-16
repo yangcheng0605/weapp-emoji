@@ -14,7 +14,7 @@
       <scroll-view scroll-y="true" bindscroll="emojiScroll" style="height:200px">
         <block wx:for="{{emojis}}" wx:for-item="e" wx:key="index">
           <view class="emoji-cell">
-            <image class="touch-active" catchtap="emojiChoose" src="http://soupu.oss-cn-shanghai.aliyuncs.com/emoji/{{e.emoji}}.png" data-emoji="{{e.char}}" data-oxf="{{e.emoji}}"></image>
+            <image class="touch-active" catchtap="emojiChoose" src="/imgs/{{e.emoji}}.png" data-emoji="{{e.char}}" data-oxf="{{e.emoji}}"></image>
           </view>
         </block>
       </scroll-view>
